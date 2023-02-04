@@ -1,0 +1,94 @@
+
+.kv
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2)
+  @apply w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] lg:h-[800px] grid place-content-center space-y-8
+  &__content
+    @apply space-y-4 pt-28
+  p
+    @apply text-white text-3xl text-center tracking-wider
+    span
+      text-shadow: 1px 1px 3px #ffffff
+
+.next
+  @apply bg-stone-100 space-y-6 flex-col p-4
+  button
+    @apply mx-auto
+
+.desc
+  @apply p-4
+  &__title
+    @apply text-4xl text-theme font-bold space-y-3 tracking-wider mb-10
+  &__content
+    @apply space-y-6 mb-10
+    p:first-of-type
+      @apply text-2xl text-secondary tracking-wide
+    p:last-of-type
+      @apply text-base text-stone-400 tracking-wide
+  &__img
+    @apply h-[400px] bg-cover bg-center mt-20
+
+.idea
+  @apply bg-stone-100 p-8
+  & > img
+    @apply flex mx-auto
+  &__number
+    @apply bg-white text-xl px-4 pt-12 pb-8 -mt-10
+    p
+      @apply text-center
+      span
+        @apply text-theme text-4xl mx-1
+  &__slogan
+    @apply relative py-12
+    i
+      @apply absolute top-16 transform text-secondary text-6xl
+      &:first-of-type
+        @apply  left-0 rotate-180
+      &:last-of-type
+        @apply  right-0
+    p
+      @apply text-center
+    p:first-of-type
+      @apply relative text-3xl tracking-wider leading-relaxed
+    p:last-of-type
+      @apply px-6 mt-4 text-lg
+
+.calendar
+  @apply p-6
+  iframe
+    border: solid 1px #777
+    @apply w-full min-h-80 max-h-3/5
+
+.course
+  @apply bg-stone-100 p-4 pb-10
+  h3
+    @apply text-4xl text-theme font-bold mt-2 mb-6
+  ul
+    @apply space-y-10
+  &__card
+    @apply relative bg-white p-4 pb-8
+    h6
+      @apply text-2xl mt-2 mb-4 underline decoration-primary decoration-8
+    div
+      @apply space-y-2
+    button
+      @apply absolute text-lg -bottom-6 right-6 bg-secondary px-5 py-2 rounded-full select-none
+
+.value
+  @apply p-4
+  h3
+    @apply text-4xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6
+  &__card
+    @apply relative pt-16 pb-6 px-8
+    h6
+      @apply relative text-3xl text-center tracking-widest text-stone-600 mb-4
+    i
+      @apply absolute left-1/2 top-0 text-[96px] text-secondary transform -translate-x-1/2 text-opacity-80
+    p
+      @apply relative px-4 leading-relaxed
+
+.contact
+  @apply p-4 pb-10 bg-stone-100
+  h3
+    @apply text-4xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6
+  ul
+    @apply flex items-center justify-center space-x-10

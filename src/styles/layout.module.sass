@@ -1,0 +1,17 @@
+.logo
+  @apply absolute inset-x-0 top-0 h-28 py-2 flex items-end justify-center space-x-2
+
+.menu
+  @apply fixed bottom-0 inset-x-0 grid grid-cols-5 gap-2 bg-secondary rounded-t-2xl px-4 py-3 select-none
+  &__option
+    @apply relative grid place-content-center
+    // i
+    //   @apply
+    p
+      @apply text-sm whitespace-pre
+  &__circle
+    @apply flex mx-auto
+    &.active
+      @apply absolute -top-full p-3 text-white rounded-full bg-theme border-8 border-white transition-all
+      & + p
+        @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 text-theme font-bold text-base
