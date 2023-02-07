@@ -22,6 +22,10 @@ export default function Home() {
         <meta name="description" content="有禾國文" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0&display=optional"
+        />
       </Head>
       <main>
         <HomeKV />
