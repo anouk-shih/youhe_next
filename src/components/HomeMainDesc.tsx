@@ -22,7 +22,7 @@ export default function Desc() {
       <button type="button" className="btn-primary">
         MORE ABOUT US
       </button>
-      <div className={styles.desc__img} style={style} />
+      {/* <div className={styles.desc__img} style={style} /> */}
     </section>
   );
 }

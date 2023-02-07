@@ -15,7 +15,7 @@
     @apply mx-auto
 
 .desc
-  @apply p-4
+  @apply px-4 py-10
   &__title
     @apply text-4xl text-theme font-bold space-y-3 tracking-wider mb-10
   &__content
@@ -39,12 +39,12 @@
         @apply text-theme text-4xl mx-1
   &__slogan
     @apply relative py-12
-    i
-      @apply absolute top-16 transform text-secondary text-6xl
+    svg
+      @apply absolute top-16 transform text-secondary w-16 h-auto
       &:first-of-type
-        @apply  left-0 rotate-180
+        @apply  left-0
       &:last-of-type
-        @apply  right-0
+        @apply  right-0  rotate-180
     p
       @apply text-center
     p:first-of-type
@@ -77,18 +77,44 @@
   @apply p-4
   h3
     @apply text-4xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6
+    svg
+      @apply inline-block
+      &:last-of-type
+        @apply transform rotate-180
   &__card
     @apply relative pt-16 pb-6 px-8
     h6
       @apply relative text-3xl text-center tracking-widest text-stone-600 mb-4
-    i
-      @apply absolute left-1/2 top-0 text-[96px] text-secondary transform -translate-x-1/2 text-opacity-80
+    svg
+      @apply absolute left-1/2 top-0 w-24 h-auto text-secondary transform -translate-x-1/2 text-opacity-80
+      path
+        @apply stroke-secondary
     p
       @apply relative px-4 leading-relaxed
 
 .contact
-  @apply p-4 pb-10 bg-stone-100
+  @apply p-4 pb-10
   h3
     @apply text-4xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6
   ul
     @apply flex items-center justify-center space-x-10
+
+.teacher
+  @apply px-4 py-10 bg-stone-100
+  &__img
+    @apply h-[300px] w-[300px] bg-cover bg-center rounded-full flex mx-auto
+  h3
+    @apply text-4xl text-theme font-bold space-y-3 tracking-wider mb-10
+  &__content
+    h5
+      @apply font-bold text-2xl mt-5 mb-2
+    h6
+      @apply font-bold text-lg mb-1 mt-2 ml-2
+    p
+      @apply ml-4
+    ul
+      li
+        @apply list-disc ml-6
+  &__title
+    @apply text-center text-2xl font-bold mt-3 mb-6
+

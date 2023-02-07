@@ -11,6 +11,7 @@ import HomeCourse from "@/components/HomeCourse";
 import HomeCalendar from "@/components/HomeCalendar";
 import HomeValue from "@/components/HomeValue";
 import HomeContact from "@/components/HomeContact";
+import HomeTeacher from "@/components/HomeTeacher";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -22,10 +23,6 @@ export default function Home() {
         <meta name="description" content="有禾國文" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0&display=optional"
-        />
       </Head>
       <main>
         <HomeKV />
@@ -35,6 +32,7 @@ export default function Home() {
         <HomeCalendar />
         <HomeCourse />
         <HomeValue />
+        <HomeTeacher />
         <HomeContact />
 
         {/* <div className={styles.description}>

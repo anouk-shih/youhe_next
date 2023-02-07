@@ -1,5 +1,6 @@
 import styles from "@/styles/Home.module.sass";
 import Image from "next/image";
+import { GoQuote } from "react-icons/go";
 
 export default function Idea() {
   return (
@@ -11,8 +12,9 @@ export default function Idea() {
         </p>
       </div>
       <div className={styles.idea__slogan}>
-        <i className="material-symbols-rounded">format_quote</i>
-        <i className="material-symbols-rounded">format_quote</i>
+        <GoQuote />
+        <GoQuote />
+
         <p>
           讓語文成為
           <br />
