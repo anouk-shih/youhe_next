@@ -58,6 +58,7 @@
       {
         "ignore": ["jsx", "global"]
       }
-    ]
+    ],
+    "no-nested-ternary": "off"
   }
 }

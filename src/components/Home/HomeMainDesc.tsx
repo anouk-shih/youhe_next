@@ -19,10 +19,6 @@ export default function Desc() {
           有禾國文的核心精神為「學習生活、豐富心靈」，我們致力於將課內的國語文知識，結合歷史、哲學、生活美學，拓展出更為寬廣的面向，並以高度互動的方式，讓學生喜愛每一次的課堂。
         </p>
       </div>
-      <button type="button" className="btn-primary">
-        MORE ABOUT US
-      </button>
-      {/* <div className={styles.desc__img} style={style} /> */}
     </section>
   );
 }

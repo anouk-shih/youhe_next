@@ -4,9 +4,9 @@
 .menu
   @apply fixed bottom-0 inset-x-0 grid grid-cols-5 gap-2 bg-secondary rounded-t-2xl px-4 py-3 select-none
   &__option
-    @apply relative grid place-content-center
-    // i
-    //   @apply
+
+    & > *
+      @apply relative grid place-content-center w-full h-full
     p
       @apply text-sm whitespace-pre
   &__circle

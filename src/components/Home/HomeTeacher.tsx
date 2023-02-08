@@ -2,8 +2,7 @@ import styles from "@/styles/Home.module.sass";
 
 export default function Teacher() {
   const style = {
-    backgroundImage:
-      'url("https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")',
+    backgroundImage: 'url("./teacher.jpg")',
   };
 
   return (

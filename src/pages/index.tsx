@@ -1,19 +1,13 @@
 import Head from "next/head";
-// import Image from "next/image";
-// import { Inter } from '@next/font/google'
-// import styles from "@/styles/Home.module.sass";
-// import LogoBar from "@/components/LogoBar";
-import HomeKV from "@/components/HomeKV";
-import HomeAds from "@/components/HomeAds";
-import HomeMainDesc from "@/components/HomeMainDesc";
-import HomeIdea from "@/components/HomeIdea";
-import HomeCourse from "@/components/HomeCourse";
-import HomeCalendar from "@/components/HomeCalendar";
-import HomeValue from "@/components/HomeValue";
-import HomeContact from "@/components/HomeContact";
-import HomeTeacher from "@/components/HomeTeacher";
-
-// const inter = Inter({ subsets: ['latin'] })
+import HomeMainDesc from "@/components/Home/HomeMainDesc";
+import HomeIdea from "@/components/Home/HomeIdea";
+import HomeCalendar from "@/components/Home/HomeCalendar";
+import HomeCourse from "@/components/Home/HomeCourse";
+import HomeValue from "@/components/Home/HomeValue";
+import HomeTeacher from "@/components/Home/HomeTeacher";
+import HomeContact from "@/components/Home/HomeContact";
+import HomeKV from "@/components/Home/HomeKV";
+import HomeAds from "@/components/Home/HomeAds";
 
 export default function Home() {
   return (
