@@ -11,7 +11,12 @@ export default function OptionMenu() {
     { id: "home", icon: <FaHome />, name: "首頁", url: "/" },
     { id: "chinese", icon: <FaBook />, name: "國文課", url: "/normal" },
     { id: "booking", icon: <HiLightningBolt />, name: "立即體驗", url: "" },
-    { id: "composition", icon: <FaBookReader />, name: "作文課", url: "" },
+    {
+      id: "composition",
+      icon: <FaBookReader />,
+      name: "作文課",
+      url: "/readnwrite",
+    },
     {
       id: "contact",
       icon: <HiChatBubbleBottomCenterText />,
@@ -28,6 +33,10 @@ export default function OptionMenu() {
       setActive("home");
     } else if (pathname === "/normal") {
       setActive("chinese");
+    } else if (pathname === "/readnwrite") {
+      setActive("composition");
+    } else {
+      setActive("");
     }
   }, [pathname]);
 

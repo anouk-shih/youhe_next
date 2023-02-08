@@ -2,13 +2,16 @@
 .kv
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2)
   @apply relative w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] lg:h-[800px] grid place-content-center
+  &::before
+    content:''
+    @apply absolute inset-0 bg-black bg-opacity-40
   &__content
-    @apply w-full pt-28
+    @apply relative w-full pt-28
     p
       @apply text-white text-4xl text-center tracking-wider underline decoration-secondary decoration-8
   &__item
     @apply absolute bottom-4 inset-x-4 flex items-center justify-between
-    & > div
+    & > a
       @apply text-xl bg-primary p-2 rounded-xl flex items-center justify-center space-x-3
 
 .course

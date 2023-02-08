@@ -15,9 +15,9 @@ export default function KV() {
         </p>
         <p>有收穫的課堂</p>
       </div>
-      <button type="button" className="btn-primary">
+      {/* <button type="button" className="btn-primary">
         查看我們的課程
-      </button>
+      </button> */}
     </section>
   );
 }
