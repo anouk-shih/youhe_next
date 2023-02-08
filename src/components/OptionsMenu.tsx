@@ -35,7 +35,7 @@ export default function OptionMenu() {
     <section>
       <ul className={styles.menu}>
         {options.map((e) => (
-          <li className={styles.menu__option}>
+          <li className={styles.menu__option} key={e.id}>
             {e.id === "booking" ? (
               <div>
                 <div

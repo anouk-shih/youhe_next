@@ -1,9 +1,10 @@
 import styles from "@/styles/Home.module.sass";
+import { useId } from "react";
 
 export default function Course() {
   const chosen = [
     {
-      id: "c00",
+      id: useId(),
       title: "半小時體驗課程",
       desc: (
         <div>
@@ -15,7 +16,7 @@ export default function Course() {
       ),
     },
     {
-      id: "c01",
+      id: useId(),
       title: "111-2 國小閱寫班 ",
       desc: (
         <div>
@@ -34,7 +35,7 @@ export default function Course() {
       ),
     },
     {
-      id: "c02",
+      id: useId(),
       title: "升私中課程",
       desc: (
         <div>

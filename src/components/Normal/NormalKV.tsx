@@ -1,4 +1,8 @@
 import styles from "@/styles/Normal.module.sass";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 export default function KV() {
   const style = {
@@ -8,12 +12,16 @@ export default function KV() {
   return (
     <section className={styles.kv} style={style}>
       <div className={styles.kv__content}>
-        <div className="kv__item">
+        <p>一般國語文課程</p>
+      </div>
+      <div className={styles.kv__item}>
+        <div>
+          <BsFillArrowLeftCircleFill />
           <p>其他服務</p>
         </div>
-        <p>一般國語文課程</p>
-        <div className="kv__item">
+        <div>
           <p>閱寫班</p>
+          <BsFillArrowRightCircleFill />
         </div>
       </div>
     </section>

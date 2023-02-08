@@ -1,10 +1,45 @@
 
 .kv
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2)
-  @apply w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] lg:h-[800px] grid place-content-center space-y-8
+  @apply relative w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] lg:h-[800px] grid place-content-center
   &__content
-    @apply flex items-center justify-center pt-28
-  p
-    @apply text-white text-3xl text-center tracking-wider
+    @apply w-full pt-28
+    p
+      @apply text-white text-4xl text-center tracking-wider underline decoration-secondary decoration-8
   &__item
-    // @apply
+    @apply absolute bottom-4 inset-x-4 flex items-center justify-between
+    & > div
+      @apply text-xl bg-primary p-2 rounded-xl flex items-center justify-center space-x-3
+
+.course
+  @apply p-4 pb-10
+  h3
+    @apply text-4xl text-theme font-bold my-6
+  ul
+    @apply space-y-5
+  &__card
+    @apply relative bg-stone-100 p-4 pb-8 mt-4
+    h4
+      @apply text-xl mt-2 mb-4 underline decoration-primary decoration-8 font-bold
+    div
+      @apply space-y-2
+    button
+      @apply absolute text-lg -bottom-6 right-6 bg-secondary px-5 py-2 rounded-full select-none
+
+.qa
+  @apply px-4 py-8 space-y-10
+  h4
+    @apply text-3xl font-bold mb-6
+  ul
+    @apply list-disc
+    li
+      @apply ml-8
+
+.pay
+  @apply px-4 py-8 space-y-10
+  h4
+    @apply text-3xl font-bold mb-6
+  ul
+    @apply list-decimal
+    li
+      @apply ml-8
