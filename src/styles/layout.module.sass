@@ -1,8 +1,18 @@
+.bar
+  @apply absolute inset-x-0 top-0 h-28 py-2 lg:px-10 z-100 flex items-end justify-center lg:items-center lg:justify-between max-w-screen-xl mx-auto
+  &__menu
+    @apply hidden lg:flex  items-center justify-end space-x-6 pt-5
+    li
+      @apply text-white text-xl tracking-widest
+      &.active
+        a
+          @apply transition-all underline decoration-8 decoration-secondary
+
 .logo
-  @apply absolute inset-x-0 top-0 h-28 py-2 flex items-end justify-center space-x-2 z-100 text-white
+  @apply flex items-end justify-center text-white space-x-2
 
 .menu
-  @apply fixed bottom-0 inset-x-0 grid grid-cols-5 gap-2 bg-secondary rounded-t-2xl px-4 py-3 select-none
+  @apply lg:hidden fixed bottom-0 inset-x-0 grid grid-cols-5 gap-2 bg-secondary rounded-t-2xl px-4 py-3 select-none
   &__option
 
     & > *

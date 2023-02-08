@@ -57,9 +57,14 @@
 
 html,
 body {
-  @apply max-w-full min-h-full overflow-x-hidden overflow-y-scroll;
+  @apply max-w-full min-h-full overflow-hidden;
 }
-
+html {
+  @apply overflow-x-hidden overflow-y-scroll;
+}
+body {
+  @apply overflow-hidden;
+}
 main {
   @apply pb-8;
 }

@@ -35,24 +35,26 @@ export default function BrandValue() {
   ];
   return (
     <section className={styles.value}>
-      <h3>
-        <GoQuote />
-        <span>
-          起於無心播種，
-          <br />
-          終於富足收穫
-        </span>
-        <GoQuote />
-      </h3>
-      <ul>
-        {chosen.map((e) => (
-          <div className={styles.value__card}>
-            {e.icon}
-            <h6>{e.title}</h6>
-            <p>{e.desc}</p>
-          </div>
-        ))}
-      </ul>
+      <div className={styles.value__container}>
+        <h3>
+          <GoQuote />
+          <span>
+            起於無心播種，
+            <br className="lg:hidden" />
+            終於富足收穫
+          </span>
+          <GoQuote />
+        </h3>
+        <ul>
+          {chosen.map((e) => (
+            <div className={styles.value__card}>
+              {e.icon}
+              <h6>{e.title}</h6>
+              <p>{e.desc}</p>
+            </div>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

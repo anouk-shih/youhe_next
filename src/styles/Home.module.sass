@@ -1,7 +1,7 @@
 
 .kv
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2)
-  @apply relative w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] lg:h-[800px] grid place-content-center space-y-8
+  @apply relative w-screen max-h-full bg-center bg-no-repeat bg-cover h-[450px] sm:h-[640px] grid place-content-center space-y-8
   &::before
     content:''
     @apply absolute inset-0 bg-black bg-opacity-40
@@ -13,29 +13,36 @@
       text-shadow: 1px 1px 3px #ffffff
 
 .next
-  @apply bg-stone-100 space-y-6 flex-col p-4
+  @apply bg-stone-100 p-4 lg:px-10
+  & > div
+    @apply flex flex-col mx-auto lg:max-w-screen-xl space-y-6  lg:flex-row lg:items-center justify-between
   button
-    @apply mx-auto
+    @apply mx-auto lg:mx-0
 
 .desc
-  @apply px-4 py-10
+  @apply px-4 lg:px-10 py-10
+  &__container
+    @apply flex flex-col mx-auto lg:max-w-screen-xl
   &__title
     @apply text-4xl text-theme font-bold space-y-3 tracking-wider mb-10
   &__content
-    @apply space-y-6 mb-10
+    @apply space-y-6 mb-10 max-w-screen-sm
     p:first-of-type
+      text-shadow: 1px 1px 0px #aaaaaa
       @apply text-2xl text-secondary tracking-wide
     p:last-of-type
-      @apply text-base text-stone-400 tracking-wide
+      @apply text-base lg:text-lg tracking-wide
   &__img
     @apply h-[400px] bg-cover bg-center mt-20
 
 .idea
-  @apply bg-stone-100 p-8
-  & > img
-    @apply flex mx-auto
+  @apply bg-stone-100 px-4 py-8 lg:px-10
+  &__container
+    @apply lg:grid lg:grid-cols-2 lg:gap-10 lg:mx-auto lg:max-w-screen-xl lg:flex-row lg:items-center justify-between
+    img
+      @apply flex mx-auto
   &__number
-    @apply bg-white text-xl px-4 pt-12 pb-8 -mt-10
+    @apply bg-white text-xl px-4 pt-12 pb-8 -mt-10 rounded-xl
     p
       @apply text-center
       span
@@ -56,19 +63,21 @@
       @apply px-6 mt-4 text-lg
 
 .calendar
-  @apply p-6
+  @apply px-4 py-8 lg:px-10 lg:max-w-screen-xl flex mx-auto
   iframe
     border: solid 1px #777
     @apply w-full min-h-80 max-h-3/5
 
 .course
-  @apply bg-stone-100 p-4 pb-10
+  @apply bg-stone-100 px-4 py-8 pb-12 lg:px-10
+  &__container
+    @apply lg:flex lg:flex-col mx-auto lg:max-w-screen-xl
   h3
     @apply text-4xl text-theme font-bold mt-2 mb-6
   ul
-    @apply space-y-10
+    @apply space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-10
   &__card
-    @apply relative bg-white p-4 pb-8
+    @apply relative bg-white p-4 pb-8 rounded-xl
     h6
       @apply text-2xl mt-2 mb-4 underline decoration-primary decoration-8
     div
@@ -77,13 +86,17 @@
       @apply absolute text-lg -bottom-6 right-6 bg-secondary px-5 py-2 rounded-full select-none
 
 .value
-  @apply p-4
+  @apply p-4 py-8 lg:px-10 lg:py-20
+  &__container
+    @apply lg:flex lg:flex-col mx-auto lg:max-w-screen-xl
   h3
-    @apply text-4xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6
+    @apply text-4xl lg:text-5xl text-theme text-center leading-relaxed px-4 space-x-3 mb-6 lg:mb-10
     svg
       @apply inline-block
       &:last-of-type
         @apply transform rotate-180
+  ul
+    @apply lg:grid lg:grid-cols-2 lg:gap-10
   &__card
     @apply relative pt-16 pb-6 px-8
     h6
@@ -103,12 +116,19 @@
     @apply flex items-center justify-center space-x-10
 
 .teacher
-  @apply px-4 py-10 bg-stone-100
+  @apply px-4 lg:px-10 py-10 bg-stone-100
+  &__container
+    @apply lg:flex lg:flex-col mx-auto lg:max-w-screen-xl
   &__img
     @apply h-[250px] w-[250px] bg-cover bg-center rounded-full flex mx-auto
   h3
     @apply text-4xl text-theme font-bold space-y-3 tracking-wider mb-10
+  &__row
+    @apply lg:flex lg:space-x-10 lg:mx-auto
+    & > div
+      @apply px-6
   &__content
+    @apply lg:flex-auto
     h5
       @apply font-bold text-2xl mt-5 mb-2
     h6

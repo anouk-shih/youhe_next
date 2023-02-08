@@ -49,20 +49,22 @@ export default function Course() {
   ];
   return (
     <section className={styles.course}>
-      <h3>精選課程</h3>
-      <ul>
-        {chosen.map((e) => (
-          <div className={styles.course__card} key={e.id}>
-            <h6>{e.title}</h6>
-            {e.desc}
-            <button className="btn" type="button">
-              立即
-              <br />
-              報名
-            </button>
-          </div>
-        ))}
-      </ul>
+      <div className={styles.course__container}>
+        <h3>精選課程</h3>
+        <ul>
+          {chosen.map((e) => (
+            <div className={styles.course__card} key={e.id}>
+              <h6>{e.title}</h6>
+              {e.desc}
+              <button className="btn" type="button">
+                立即
+                <br />
+                報名
+              </button>
+            </div>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
